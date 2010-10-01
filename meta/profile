@@ -1,0 +1,10 @@
+---
+title: TkXML
+suite: rubyworks
+summary: XML markup for building Tk User interfaces
+contact: trans <transfire+tkxml AT gmail.com>
+license: Apache 2.0
+created: 2008-02-21
+
+description:
+  TkXML translates XML markup into Ruby Tk interface code
