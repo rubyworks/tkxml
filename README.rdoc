@@ -30,6 +30,12 @@ To use the library:
   tkxml = TkXML.new(File.read('example.xml'))
   tkxml.build
 
+== STATUS
+
+At ths point, TkXML is little more than an interesting expirement in encoding 
+GUIs via markup. But it certainly has the potential of becoming a productive
+tool if someone were inclined to further it's development.
+
 == COPYING
 
 Copyright (c) 2002 Thomas Sawyer
