@@ -1,0 +1,62 @@
+= TkXML
+
+An XML markup lanaguage for generating Tk user-interfaces. It was inspired
+by GTK's glade format. The TkXML format defines a very simple one-to-one
+correlatation to the Ruby Tk API.
+
+== Usage
+
+Here's an +example.xml+ TkXML file:
+
+  <Tk:Root name="test" title="Test">
+	  <Tk:Frame name="menuframe">
+		  <Tk:Menubutton name="filebutton" text="File" underline="0">
+			  <Tk:Menu name="filemenu" tearoff="false">
+				  <Tk:_add
+					  _1="command"
+					  label="Open"
+					  command="openDocument"
+					  underline="0"
+					  accel="Ctrl+O" />
+				  <Tk:_add
+					  _1="command"
+					  label="Exit"
+					  command="exitApplication"
+					  underline="0"
+					  accel="Ctrl+Q" />
+			  </Tk:Menu>
+			  <Tk:_pack side="left" />
+		  </Tk:Menubutton>
+		  <Tk:_pack side="left" />
+	  </Tk:Frame>
+	  <Tk:_bind
+		  _1="Control-o"
+		  _2="openDocument" />
+	  <Tk:_bind
+		  _1="Control-q"
+		  _2="exitApplication" />
+  </Tk:Root>
+
+To use the library:
+
+  require 'tkxml'
+
+  tkxml = TkXML.new(File.read('example.xml'))
+  tkxml.build
+
+== COPYING
+
+Copyright (c) 2002 Thomas Sawyer
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+

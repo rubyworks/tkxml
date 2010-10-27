@@ -1,0 +1,11 @@
+#!mast -x Syckfile bin lib meta qed [A-Z]*
+lib/tkxml/meta/data.rb
+lib/tkxml/meta/package
+lib/tkxml/meta/profile
+lib/tkxml.rb
+meta/data.rb
+meta/package
+meta/profile
+HISTORY.rdoc
+LICENSE
+README.rdoc
