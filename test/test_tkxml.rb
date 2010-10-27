@@ -1,7 +1,6 @@
 require 'tkxml'
 
-xml_file = File.open("ui.xml")
-tkxml_instance = TkXML.new(xml_file)
-tkxml_instance.build
-
+file  = File.open("demo/ui.xml")
+tkxml = TkXML.new(file)
+tkxml.build
 
