@@ -1,11 +1,12 @@
-#!mast -x Syckfile bin lib meta qed [A-Z]*
-lib/tkxml/meta/data.rb
-lib/tkxml/meta/package
-lib/tkxml/meta/profile
+#!mast -x Syckfile -x PROFILE .ruby bin lib man spec test [A-Z]*
+.ruby
+lib/tkxml/nokogiri.rb
+lib/tkxml/rexml.rb
 lib/tkxml.rb
-meta/data.rb
-meta/package
-meta/profile
+lib/tkxml.yml
+test/test_tkxml.rb
+test/ui.xml
 HISTORY.rdoc
 LICENSE
 README.rdoc
+VERSION

@@ -13,7 +13,22 @@ require 'tk'
 #
 class TkXML
 
-  require 'tkxml/meta/data'
+  # Access to project metadata.
+  def self.metadata
+    @metadata ||= (
+      require 'yaml'
+      YAML.load(File.new(File.dirname(__FILE__) + '/tkxml.yml'))
+    )
+  end
+
+  # Access metadata as constants.
+  def self.const_missing(name)
+    key = name.to_s.downcase
+    metadata[key] || super(name)
+  end
+
+  # TODO: here only b/c Ruby 1.8.x is broke
+  VERSION = metadata['version']
 
   #
   def initialize(source, type=:nokogiri)

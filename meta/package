@@ -1,8 +1,0 @@
-name    : tkxml
-data    : 2002-04-19
-version : 0.2.4
-
-requires:
-  - syckle (build)
-  - qed (test)
-
