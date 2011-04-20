@@ -1,6 +1,6 @@
 = RELEASE HISTORY
 
-== 0.10.26 / 2010-10-26
+== 0.3.0 / 2011-03-05
 
 The REXML listener was causing an known error, and without word on
 a fix yet, we added a Nokogiri SAX parser that can take it's place.
@@ -10,7 +10,7 @@ Changes:
 * Add Nokogiri SAX parser.
 * Make back-end selectable.
 
-== 0.02.04   / 2002-04-19
+== 0.2.0 / 2002-04-19
 
 Yes, TkXML was create just that long ago.
 

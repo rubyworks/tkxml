@@ -26,20 +26,20 @@ stats:
 
 rdoc:
   service  : RDoc
-  template : redfish
+  template : newfish
   include  : ~
   exclude  : ~
   main     : ~
   extra    : ~
-  output   : site/docs/api
-  active   : false
+  output   : site
+  active   : true
 
 ridoc:
   service: RIDoc
   include: ~
   exclude: ~
   output : ri
-  active : true
+  active : false
 
 #vclog:
 #  service  : VClog
