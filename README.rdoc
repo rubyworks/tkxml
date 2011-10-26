@@ -1,10 +1,19 @@
 = TkXML
 
+{Source Code}[http://github.com/rubyworks/tkxml] |
+{Maling List}[http://groups.google.com/group/rubyworks-mailinglist]
+
+{<img src="http://travis-ci.org/rubyworks/tkxml.png" />}[http://travis-ci.org/rubyworks/tkxml]
+
+
+== DESCRIPTION
+
 An XML markup lanaguage for generating Tk user-interfaces. It was inspired
 by GTK's glade format. The TkXML format defines a very simple one-to-one
 correlatation to the Ruby Tk API.
 
-== Usage
+
+== SYNOPSIS
 
 Here's an +example.xml+ TkXML file:
 
@@ -30,25 +39,19 @@ To use the library:
   tkxml = TkXML.new(File.read('example.xml'))
   tkxml.build
 
+
 == STATUS
 
 At ths point, TkXML is little more than an interesting expirement in encoding 
 GUIs via markup. But it certainly has the potential of becoming a productive
 tool if someone were inclined to further it's development.
 
-== COPYING
 
-Copyright (c) 2002 Thomas Sawyer
+== COPYRIGHTS
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Copyright (c) 2002 Thomas Sawyer, Rubyworks
 
-   http://www.apache.org/licenses/LICENSE-2.0
+TkXML is distributable in accordance with the BSD-2-Clause license.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+See NOTICE.rdoc for details.
 
