@@ -2,7 +2,7 @@
 source:
 - meta
 authors:
-- name: trans
+- name: 7rans
   email: transfire+tkxml@gmail.com
 copyrights:
 - holder: Rubyworks
@@ -22,7 +22,10 @@ requirements:
 dependencies: []
 conflicts: []
 repositories: []
-resources: {}
+resources:
+  home: http://rubyworks.github.com/tkxml
+  code: http://github.com/rubyworks/tkxml
+  mail: http://groups.google.com/group/rubyworks-mailinglist
 extra: {}
 load_path:
 - lib
@@ -30,6 +33,7 @@ revision: 0
 created: '2008-02-21'
 summary: XML markup for building Tk User interfaces
 title: TkXML
-version: 0.3.0
+version: 0.3.1
+name: tkxml
 description: TkXML translates XML markup into Ruby Tk interface code
-date: '2011-10-25'
+date: '2011-10-26'
