@@ -1,34 +1,35 @@
---- 
-name: tkxml
-organizaton: RubyWorks
-title: TkXML
-contact: trans <transfire+tkxml AT gmail.com>
-requires: 
-- group: 
+---
+source:
+- meta
+authors:
+- name: trans
+  email: transfire+tkxml@gmail.com
+copyrights:
+- holder: Rubyworks
+  year: '2008'
+  license: BSD-2-Clause
+replacements: []
+alternatives: []
+requirements:
+- name: detroit
+  groups:
   - build
-  name: syckle
-  version: 0+
-- group: 
+  development: true
+- name: qed
+  groups:
   - test
-  name: qed
-  version: 0+
-pom_verison: 1.0.0
-manifest: 
-- .ruby
-- lib/tkxml/nokogiri.rb
-- lib/tkxml/rexml.rb
-- lib/tkxml.rb
-- lib/tkxml.yml
-- test/test_tkxml.rb
-- test/ui.xml
-- HISTORY.rdoc
-- LICENSE
-- README.rdoc
-- VERSION
-version: 0.2.4
-copyright: (c) 2008 Trans
-licenses: 
-- Apache 2.0
-description: TkXML translates XML markup into Ruby Tk interface code
+  development: true
+dependencies: []
+conflicts: []
+repositories: []
+resources: {}
+extra: {}
+load_path:
+- lib
+revision: 0
+created: '2008-02-21'
 summary: XML markup for building Tk User interfaces
-created: 2008-02-21
+title: TkXML
+version: 0.3.0
+description: TkXML translates XML markup into Ruby Tk interface code
+date: '2011-10-25'

@@ -1,0 +1,10 @@
+#!mast .ruby .yardopts bin lib man spec test [A-Z]*.*
+.ruby
+lib/tkxml/nokogiri.rb
+lib/tkxml/rexml.rb
+lib/tkxml.rb
+lib/tkxml.yml
+spec/example.rdoc
+HISTORY.rdoc
+NOTICE.rdco
+README.rdoc

@@ -1,0 +1,29 @@
+---
+gem:
+  active: false
+
+github:
+  active: true
+
+dnote:
+  labels: ~
+  output: log/NOTES.rdoc
+
+qed:
+  files: spec/
+
+qedoc:
+  files: spec/
+  title: TkXML Demonstrandum
+  output: QED.rdoc
+
+email:
+  mailto:
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+
+vclog:
+  output:
+    - log/Changes.rdoc
+    - log/History.rdoc
+
