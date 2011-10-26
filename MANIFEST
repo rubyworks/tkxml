@@ -6,5 +6,7 @@ lib/tkxml.rb
 lib/tkxml.yml
 spec/example.rdoc
 HISTORY.rdoc
-NOTICE.rdco
 README.rdoc
+QED.rdoc
+NOTICE.rdoc
+TKXML.txt
