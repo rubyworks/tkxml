@@ -30,10 +30,10 @@ extra: {}
 load_path:
 - lib
 revision: 0
-created: '2008-02-21'
+created: '2002-04-21'
 summary: XML markup for building Tk User interfaces
 title: TkXML
 version: 0.3.1
 name: tkxml
 description: TkXML translates XML markup into Ruby Tk interface code
-date: '2011-10-26'
+date: '2011-11-04'

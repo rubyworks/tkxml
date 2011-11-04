@@ -1,6 +1,6 @@
 ---
 gem:
-  active: false
+  active: true
 
 github:
   active: true
