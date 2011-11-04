@@ -27,7 +27,7 @@ class TkXML
       ## pull off the tag name if prefixed with the Tk namespace
       name  = name.sub(/^Tk:/, '')
 
-      attrs = Hash[*attrs]
+      attrs = Hash[*attrs.flatten]
 
       ## is it a method call or a new widget?
       if name[0..0] == '_'

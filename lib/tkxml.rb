@@ -1,34 +1,16 @@
-# TkXML (2.04a)
-# Copyright 2002 Thomas Sawyer (transami@runbox.com)
-# April 2002 Alpha
-
 require 'tk'
 
-# A combination of Ruby/Tk + REXML to allow for fast and easy creation of Tk
-# interfaces using standard XML
+# A combination of Ruby, Tcl/Tk and Nokogiri or REXML to allow for fast and
+# easy creation of Tk interfaces using standard XML.
 #
-#   xml_file = File.open("ui.xml")
-#   tkxml_instance = TkXML.new(xml_file)
+#   xml = File.open("ui.xml")
+#   tkxml_instance = TkXML.new(xml)
 #   tkxml_instance.build
 #
 class TkXML
 
-  # Access to project metadata.
-  def self.metadata
-    @metadata ||= (
-      require 'yaml'
-      YAML.load(File.new(File.dirname(__FILE__) + '/tkxml.yml'))
-    )
-  end
-
-  # Access metadata as constants.
-  def self.const_missing(name)
-    key = name.to_s.downcase
-    metadata[key] || super(name)
-  end
-
-  # TODO: here only b/c Ruby 1.8.x is broke
-  VERSION = metadata['version']
+  # Current version of TkXML.
+  VERSION = '0.3.1'  # :erb: VERSION = '<%= version %>'
 
   #
   def initialize(source, type=:nokogiri)
@@ -148,7 +130,7 @@ class TkXML
     puts "End Method: #{name}"
   end
 
-  private
+private
 
   # Looks like the attributes object given is nothing more then
   # a array in an array. how lame! This wll turn it into a hash.
@@ -163,3 +145,4 @@ class TkXML
 
 end
 
+# Copyright 2002 Rubyworks
