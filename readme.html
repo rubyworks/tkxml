@@ -1,0 +1,55 @@
+
+<h1>TkXML</h1>
+
+<p><a href="http://rubyworks.github.com/tkxml">Homepage</a> | <a
+href="http://github.com/rubyworks/tkxml">Source Code</a> | <a
+href="http://groups.google.com/group/rubyworks-mailinglist">Maling List</a></p>
+
+<p><a href="http://travis-ci.org/rubyworks/tkxml"><img
+src="http://travis-ci.org/rubyworks/tkxml.png" /></a></p>
+
+<h2>DESCRIPTION</h2>
+
+<p>An XML markup lanaguage for generating Tk user-interfaces. It was inspired
+by GTK’s glade format. The TkXML format defines a very simple one-to-one
+correlatation to the Ruby Tk API.</p>
+
+<h2>SYNOPSIS</h2>
+
+<p>Here’s an <tt>example.xml</tt> TkXML file:</p>
+
+<pre>&lt;Tk:Root name=&quot;test&quot; title=&quot;Test&quot;&gt;
+  &lt;Tk:Frame name=&quot;menuframe&quot;&gt;
+    &lt;Tk:Menubutton name=&quot;filebutton&quot; text=&quot;File&quot; underline=&quot;0&quot;&gt;
+      &lt;Tk:Menu name=&quot;filemenu&quot; tearoff=&quot;false&quot;&gt;
+        &lt;Tk:_add _1=&quot;command&quot; label=&quot;Open&quot; underline=&quot;0&quot; accel=&quot;Ctrl+O&quot; command=&quot;openDocument&quot; /&gt;
+        &lt;Tk:_add _1=&quot;command&quot; label=&quot;Exit&quot; underline=&quot;0&quot; accel=&quot;Ctrl+Q&quot; command=&quot;exitApplication&quot; /&gt;
+      &lt;/Tk:Menu&gt;
+      &lt;Tk:_pack side=&quot;left&quot; /&gt;
+    &lt;/Tk:Menubutton&gt;
+    &lt;Tk:_pack side=&quot;left&quot; /&gt;
+  &lt;/Tk:Frame&gt;
+  &lt;Tk:_bind _1=&quot;Control-o&quot; _2=&quot;openDocument&quot; /&gt;
+  &lt;Tk:_bind _1=&quot;Control-q&quot; _2=&quot;exitApplication&quot; /&gt;
+&lt;/Tk:Root&gt;</pre>
+
+<p>To use the library:</p>
+
+<pre>require 'tkxml'
+
+tkxml = TkXML.new(File.read('example.xml'))
+tkxml.build</pre>
+
+<h2>STATUS</h2>
+
+<p>At ths point, TkXML is little more than an interesting expirement in
+encoding  GUIs via markup. But it certainly has the potential of becoming a
+productive tool if someone were inclined to further it’s development.</p>
+
+<h2>COPYRIGHTS</h2>
+
+<p>Copyright © 2002 Thomas Sawyer, Rubyworks</p>
+
+<p>TkXML is distributable in accordance with the <b>BSD-2-Clause</b> license.</p>
+
+<p>See NOTICE.rdoc for details.</p>
