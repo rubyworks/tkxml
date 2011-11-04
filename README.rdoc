@@ -2,16 +2,16 @@
 
 {Homepage}[http://rubyworks.github.com/tkxml] |
 {Source Code}[http://github.com/rubyworks/tkxml] |
-{Maling List}[http://groups.google.com/group/rubyworks-mailinglist]
+{Mailing List}[http://groups.google.com/group/rubyworks-mailinglist]
 
 {<img src="http://travis-ci.org/rubyworks/tkxml.png" />}[http://travis-ci.org/rubyworks/tkxml]
 
 
 == DESCRIPTION
 
-An XML markup lanaguage for generating Tk user-interfaces. It was inspired
+An XML markup language for generating Tk user-interfaces. It was inspired
 by GTK's glade format. The TkXML format defines a very simple one-to-one
-correlatation to the Ruby Tk API.
+correlation to the Ruby Tk API.
 
 
 == SYNOPSIS
@@ -43,14 +43,20 @@ To use the library:
 
 == STATUS
 
-At ths point, TkXML is little more than an interesting expirement in encoding 
-GUIs via markup. But it certainly has the potential of becoming a productive
+At this point, TkXML is little more than an interesting experiment in encoding 
+GUIs via markup. But it may well have the potential of becoming a productive
 tool if someone were inclined to further it's development.
+
+
+== HISTORY
+
+An interesting side note. TkXML is the oldest bit of redistributed Ruby code
+your humble author had ever writ.
 
 
 == COPYRIGHTS
 
-Copyright (c) 2002 Thomas Sawyer, Rubyworks
+Copyright (c) 2002 Rubyworks
 
 TkXML is distributable in accordance with the *BSD-2-Clause* license.
 
