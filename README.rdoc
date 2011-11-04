@@ -51,7 +51,7 @@ tool if someone were inclined to further it's development.
 
 Copyright (c) 2002 Thomas Sawyer, Rubyworks
 
-TkXML is distributable in accordance with the BSD-2-Clause license.
+TkXML is distributable in accordance with the *BSD-2-Clause* license.
 
 See NOTICE.rdoc for details.
 
