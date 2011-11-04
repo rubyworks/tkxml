@@ -1,5 +1,6 @@
 = TkXML
 
+{Homepage}[http://rubyworks.github.com/tkxml] |
 {Source Code}[http://github.com/rubyworks/tkxml] |
 {Maling List}[http://groups.google.com/group/rubyworks-mailinglist]
 
