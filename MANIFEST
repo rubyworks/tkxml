@@ -4,9 +4,8 @@ lib/tkxml/nokogiri.rb
 lib/tkxml/rexml.rb
 lib/tkxml.rb
 lib/tkxml.yml
-spec/example.rdoc
 HISTORY.rdoc
+DEMO.rdoc
 README.rdoc
-QED.rdoc
 NOTICE.rdoc
 TKXML.txt
