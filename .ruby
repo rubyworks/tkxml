@@ -1,6 +1,6 @@
 ---
 source:
-- meta
+- var
 authors:
 - name: 7rans
   email: transfire+tkxml@gmail.com
@@ -36,4 +36,4 @@ title: TkXML
 version: 0.3.1
 name: tkxml
 description: TkXML translates XML markup into Ruby Tk interface code
-date: '2011-11-04'
+date: '2011-11-11'
