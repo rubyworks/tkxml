@@ -1,10 +1,34 @@
 = TkXML
 
-{Homepage}[http://rubyworks.github.com/tkxml] |
-{Source Code}[http://github.com/rubyworks/tkxml] |
-{Mailing List}[http://groups.google.com/group/rubyworks-mailinglist]
+*ARCHIVED -- HISTORICAL ARTIFACT*
 
-{<img src="http://travis-ci.org/rubyworks/tkxml.png" />}[http://travis-ci.org/rubyworks/tkxml]
+TkXML is the *oldest piece of publicly redistributed Ruby code* its
+author ever wrote. The original version dates to April 2002 -- the year
+he learned the Ruby language -- and a copy of that original alpha
+release is preserved in this repository under +work/tkxml.rb+, complete
+with the original +runbox.com+ contact email.
+
+The library is a small experiment in defining graphical user interfaces
+declaratively in XML, building Ruby/Tk widgets from an XML document in
+a one-to-one correspondence with the Ruby/Tk API. It was inspired by
+GTK's Glade format. At the time, the idea of "UI as data" was novel and
+exciting; it would be another decade before declarative-UI ideas (React,
+SwiftUI, Compose, Flutter, etc.) became dominant in mainstream software,
+though those wisely chose code-as-data rather than literal XML markup.
+
+Both this library and its target are now historical:
+
+* *Tk* itself was removed from Ruby's standard library in Ruby 3.0, and
+  the +tk+ gem is essentially unmaintained. Few modern Ruby projects use
+  Tk for new GUI work.
+* *XML-based UI definitions* in general lost out to declarative code,
+  JSON-based formats, and language-native DSLs.
+
+What remains interesting about this code is its *age*. It is a small
+piece of one Ruby programmer's first year with the language, preserved
+intact. No further development is planned.
+
+----
 
 
 == DESCRIPTION
